@@ -49,3 +49,8 @@
 [user]
 	email = victormendoza1305@gmail.com
 	name = Victor Mendoza
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

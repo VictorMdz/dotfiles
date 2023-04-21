@@ -28,7 +28,7 @@ export NVM_DIR="$HOME/.nvm"
 # Rails and Ruby uses the local `bin` folder to store binstubs.
 # So instead of running `bin/rails` like the doc says, just run `rails`
 # Same for `./node_modules/.bin` and nodejs
-export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
+export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin:/opt/apps/maven/bin"
 
 # Load 'lewagon' virtualenv for the Data Bootcamp. You can comment these 2 lines to disable this behavior.
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
@@ -40,4 +40,7 @@ pyenv activate lewagon 2>/dev/null && echo "🐍 Loading 'lewagon' virtualenv"
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/
+
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
